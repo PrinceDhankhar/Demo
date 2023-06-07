@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lorem ipsum - App Landing Page</title>
+
+    <!-- CSS -->
+    <link href="assets/css/main.css" rel="stylesheet">
+    <link href="assets/css/styles.css" rel="stylesheet">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+    <link rel="icon" href="assets/img/favicon.png">
+    
+    <!-- Plugins -->
+    <link href="assets/plugins/owl.carousel/owl.carousel.min.css" rel="stylesheet">
+    <link href="assets/plugins/twentytwenty/twentytwenty.css" rel="stylesheet">
+
+    <!-- Iconic Fonts -->
+    <link href="assets/css/fonts/fontawesome/all.min.css" rel="stylesheet">
+    <link href="assets/css/fonts/themify-icons.css" rel="stylesheet">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <!-- nav -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-affix">
+      <div class="container">
+        <div class="row">
+          <div class="col-auto col-lg-6 d-lg-none">
+            <button class="navbar-toggler d-xl-none" data-toggle="offcanvas" data-target="#offcanvas-left">
+              <img src="assets/img/menu-dark.svg" class="menu__btn menu-dark" alt="Menu">
+              <img src="assets/img/menu-light.svg" class="menu__btn menu-light" alt="Menu">
+            </button>
+          </div>
+
+          <div class="col-auto col-sm-auto text-lg-left ml-auto ml-lg-0">
+            <a class="navbar-brand logo" href="#">
+              <img src="assets/img/logo-dark.png" alt="Lorem ipsum" class="logo-dark">
+              <img src="assets/img/logo-light.png" alt="Lorem ipsum" class="logo-light">
+            </a>
+          </div>
+      
+          <div class="col-12 col-lg-auto ml-lg-auto">
+            <div id="offcanvas-left" class="offcanvas-md" data-animation="slideLeft">
+              <button type="button" class="close fw-100 d-lg-none" data-toggle="offcanvas-close" aria-label="Close">
+                <img src="assets/img/close-dark.svg" class="menu__btn closeMenu__btn menu-dark" alt="Close">
+                <img src="assets/img/close-light.svg" class="menu__btn closeMenu__btn menu-light" alt="Close">
+              </button>
+              <ul class="nav navbar-nav mr-6 mr-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link px-xl-5 active" data-scroll="#home">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle small" href="#" id="dropdownNav" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pages</a>
+                  <div class="dropdown-menu position-absolute" aria-labelledby="dropdownNav">
+                    <a class="dropdown-item" href="faq.html">FAQ</a>
+                    <a class="dropdown-item" href="blog.html">Blog</a>
+                    <a class="dropdown-item" href="press.html">Press</a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-scroll="#features">Features</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-scroll="#camera">Camera</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-scroll="#about">About</a>
+                </li>
+                <li class="nav-item btn-wrapper pl-lg-6">
+                  <a class="btn btn-warning btn-round" href="register.html">Download</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- /.nav -->
+
+    <!-- header -->
+    <header id="home" class="header" data-style="default" data-scroll-arrow="true">
+      <div class="header-hero d-flex align-items-center text-light">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-8 mr-auto position-relative zi-4">
+              <div class="d-flex justify-content-center justify-content-lg-start">
+                <div class="hero-cont hero-shadow pr-0">
+                  <div class="display-4 display-lg-2 fw-700 text-center text-lg-left lh-1 mb-4">
+                    <span class="d-block text-warning fadeInLeft ad-200ms">Smart</span>
+                    <span class="d-block fadeInLeft ad-400ms">Fast</span>
+                    <span class="d-block fadeInLeft ad-600ms">Analytics</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="d-none d-lg-flex align-items-center justify-content-center position-absolute l-0 r-0 text-center h-100 overflow-hidden">
+              <div class="h3d_wrapper zi-10">
+                <div class="h3d_card">
+                  <img src="assets/img/app/device-hero.png" class="pl-10 pl-lg-0 py-10 py-lg-0 fadeInRight ad-200ms device-hero ml-13" alt="Device">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="overlay hero-shape fadeIn ad-100ms"></div>
+      <!-- modal -->
+      <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+          <div class="modal-content bg-dark-end">
+            <div class="modal-header border-dark bg-transparent">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span class="text-light" aria-hidden="true">×</span>
+              </button>
+            </div>
+            <div class="position-relative ar-16_9">
+              <iframe class="overlay border-0" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /.modal-->
+    </header>
+    <!-- /.header -->
+
+    <!-- main -->
+    <main id="content-main" class="content-main">
+
+      <!-- new -->
+      <section id="features" class="wn__section content-section">
+        <div class="container">
+          <div class="row mb-10">
+            <div class="col-8 mx-auto">
+              <span class="d-block text-light mb-6 lead-1">Everything included for <strong>iPhone & iPad</strong> — no <strong>IAPs</strong></span>
+              <div class="mb-8">
+                <a href="#" class="btn-download btn btn-lg btn-sm-block btn-theme rounded-2">
+                  <div class="d-flex align-items-center py-2">
+                    <div class="mr-4">
+                      <div class="d-flex lead-5"><i class="fab fa-apple"></i></div>
+                    </div>
+                    <div class="text-left lh-6 fw-500">
+                      <span class="d-none d-lg-block">Get it From</span>
+                      <strong class="fw-700">AppStore</strong>
+                    </div>
+                  </div>
+                </a>
+                <a href="#" class="btn-download btn btn-lg btn-sm-block btn-theme rounded-2">
+                  <div class="d-flex align-items-center py-2">
+                    <div class="mr-4">
+                      <div class="d-flex lead-5"><i class="fab fa-google-play"></i></div>
+                    </div>
+                    <div class="text-left lh-6 fw-500">
+                      <span class="d-none d-lg-block">Get it From</span>
+                      <strong class="fw-700">Google Play</strong>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div>
+                <span class="lead-1 text-light">The best application for shooting and editing photos. Tools for creating stunning photos are optimized and can be used on <strong>iPhone</strong> and <strong>iPad</strong>.</span>
+              </div>
+            </div>
+          </div>
+          <div class="row gutters-y">
+            <div class="col-sm-8 col-md-6 col-lg-4 mx-auto mb-7 mb-lg-0">
+              <div class="px-3">
+                <div class="wn__icon mb-6">
+                  <img src="assets/img/icon/camera.png" alt="Icon">
+                </div>
+                <h6 class="wn__title">Live Photos</h6>
+                <p>Lorem ipsum dolor sit, consectetur adipiscing elit. Donec sapien.</p>
+              </div>
+            </div>
+            <div class="col-sm-8 col-md-6 col-lg-4 mx-auto mb-7 mb-lg-0">
+              <div class="px-3">
+                <div class="wn__icon mb-6">
+                  <img src="assets/img/icon/haptics.png" alt="Icon">
+                </div>
+                <h6 class="wn__title">Haptics</h6>
+                <p>Lorem ipsum dolor sit, consectetur adipiscing elit. Donec sapien.</p>
+              </div>
+            </div>
+            <div class="col-sm-8 col-md-6 col-lg-4 mx-auto">
+              <div class="px-3">
+                <div class="wn__icon mb-6">
+                  <img src="assets/img/icon/grouping.png" alt="Icon">
+                </div>
+                <h6 class="wn__title">Burst Grouping</h6>
+                <p>Lorem ipsum dolor sit, consectetur adipiscing elit. Donec sapien.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /.new -->
+
+      <!-- camera -->
+      <section id="camera" class="content-section">
+        <div class="container">
+          <header class="section-header text-center">
+            <h1 class="display-xl-3 fw-700 d-flex align-items-center justify-content-center mb-4"><span class="text-warning ti-shine mr-3"></span>Powerful Editing</h1>
+            <p class="lead-md-1">Lorem ipsum works great on all of your iOS 11+ devices. We have achieved a fantastic integration with the photos you already have in your library. Instead of clunkily importing a photo you want to edit, doing your thing and saving it back, simply switch tabs and edit it right in place. And you'll love the multitasking support in iPad.</p>
+          </header>
+          <div class="row">
+            <div class="col-12">
+              <div id="container1">
+                <img src="assets/img/camera/sample-before.png" alt="Photo">
+                <img src="assets/img/camera/sample-after.png" alt="Photo">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /.camera -->
+
+      <!-- about -->
+      <section class="content-section">
+        <div class="container">
+          <header class="section-header text-center">
+            <h1 class="display-xl-4 fw-700 d-flex align-items-center justify-content-center mb-0">Control Wheel</h1>
+          </header>
+          <div class="row align-items-center">
+            <div class="col-lg-5 mb-8 mb-lg-0">
+              <div class="pr-8">
+                <p class="lead-md-2">
+                  Suspendisse ac mauris quis finibus.
+                </p>
+                <p class="lead-md-2">
+                  Suspendisse ac mauris quis nunc finibus pretium. Aliquam maximus quis tortor a dictum. Suspendisse sed lobortis ante. Sed a neque at quam maximus egestas.
+                </p>
+                <p class="lead-md-2 mb-0">
+                  Suspendisse ac mauris quis nunc finibus pretium. Aliquam maximus.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-7">
+              <img src="assets/img/app/app-1.png" class="rounded" alt="Photo">
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /.about -->
+
+      <!-- features -->
+      <section class="content-section bg-dark-end">
+        <div class="container">
+          <div class="row mb-9">
+            <div class="col-12">
+              <div>
+                <h4 class="text-secondary">All your Photos</h4>
+                <h2 class="display-lg-4 mb-7">Portrait and Depth capture</h2>
+                <p class="lead-md-2 mb-0">
+                  Suspendisse ac mauris quis nunc finibus pretium. Aliquam maximus quis tortor a dictum. Suspendisse sed lobortis ante. Sed a neque at quam maximus egestas. Duis massa eros, interdum ac felis non, mollis maximus sapien. Nam commodo lorem purus, ut gravida felis pretium ut.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row gutters-y text-center">
+            <div class="col-8 col-sm-6 col-lg-3 mx-auto py-8">
+              <img src="assets/img/icon/haptics2.png" alt="Haptics" class="mb-2">
+              <span class="d-block fw-600 lead-2">Haptics</span>
+              <p class=" mb-0">
+                  Nam ac sem dignissim, pretium tellus ut, volutpat dui.
+              </p>
+            </div>
+            <div class="col-8 col-sm-6 col-lg-3 mx-auto py-8">
+              <img src="assets/img/icon/RAW.png" alt="RAW" class="mb-2">
+              <span class="d-block fw-600 lead-2">RAW Development</span>
+              <p class=" mb-0">
+                  Nam ac sem dignissim, pretium tellus ut, volutpat dui.
+              </p>
+            </div>
+            <div class="col-8 col-sm-6 col-lg-3 mx-auto py-8">
+              <img src="assets/img/icon/settings.png" alt="Customise" class="mb-2">
+              <span class="d-block fw-600 lead-2">Customise</span>
+              <p class=" mb-0">
+                  Nam ac sem dignissim, pretium tellus ut, volutpat dui.
+              </p>
+            </div>
+            <div class="col-8 col-sm-6 col-lg-3 mx-auto py-8">
+              <img src="assets/img/icon/livePhotos.png" alt="Live Photos" class="mb-2">
+              <span class="d-block fw-600 lead-2">Live Photos</span>
+              <p class=" mb-0">
+                  Nam ac sem dignissim, pretium tellus ut, volutpat dui.
+              </p>
+            </div>
+            <div class="col-8 col-sm-6 col-lg-3 mx-auto py-8">
+              <img src="assets/img/icon/metadata.png" alt="Metadata" class="mb-2">
+              <span class="d-block fw-600 lead-2">Metadata</span>
+              <p class=" mb-0">
+                  Nam ac sem dignissim, pretium tellus ut, volutpat dui.
+              </p>
+            </div>
+            <div class="col-8 col-sm-6 col-lg-3 mx-auto py-8">
+              <img src="assets/img/icon/spiritLevel.png" alt="Spirit Level" class="mb-2">
+              <span class="d-block fw-600 lead-2">Spirit Level</span>
+              <p class=" mb-0">
+                  Nam ac sem dignissim, pretium tellus ut, volutpat dui.
+              </p>
+            </div>
+            <div class="col-8 col-sm-6 col-lg-3 mx-auto py-8">
+              <img src="assets/img/icon/shutterTimer.png" alt="Shutter Timer" class="mb-2">
+              <span class="d-block fw-600 lead-2">Shutter Timer</span>
+              <p class=" mb-0">
+                  Nam ac sem dignissim, pretium tellus ut, volutpat dui.
+              </p>
+            </div>
+            <div class="col-8 col-sm-6 col-lg-3 mx-auto py-8">
+              <img src="assets/img/icon/editing.png" alt="Editing" class="mb-2">
+              <span class="d-block fw-600 lead-2">Editing</span>
+              <p class=" mb-0">
+                  Nam ac sem dignissim, pretium tellus ut, volutpat dui.
+              </p>
+            </div>
+            
+          </div>
+        </div>
+      </section>
+      <!-- /.features -->
+
+      <!-- about -->
+      <section id="about" class="content-section">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-4 mb-8 mb-lg-0 ml-auto order-lg-2">
+              <img src="assets/img/content/f_01.jpg" class="rounded" alt="Photo">
+            </div>
+            <div class="col-lg-7">
+              <div class="pr-lg-8">
+                <h4 class="text-secondary">Apply your edits selectively</h4>
+                <h2 class="display-lg-4 mb-7">Portrait and Depth capture</h2>
+                <p class="lead-md-2 mb-0">
+                  Suspendisse ac mauris quis nunc finibus pretium. Aliquam maximus quis tortor a dictum. Suspendisse sed lobortis ante. Sed a neque at quam maximus egestas. Duis massa eros, interdum ac felis non, mollis maximus sapien. Nam commodo lorem purus, ut gravida felis pretium ut.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="content-section">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-4 mb-8 mb-lg-0 mr-auto">
+              <img src="assets/img/content/f_02.jpg" class="rounded" alt="Photo">
+            </div>
+            <div class="col-lg-7">
+              <div class="pr-lg-8 text-lg-right">
+                <h4 class="text-secondary">Designed for your hands</h4>
+                <h2 class="display-lg-4 mb-7">Quick Adjustments</h2>
+                <p class="lead-md-2 mb-0">
+                  Suspendisse ac mauris quis nunc finibus pretium. Aliquam maximus quis tortor a dictum. Suspendisse sed lobortis ante. Sed a neque at quam maximus egestas. Duis massa eros, interdum ac felis non, mollis maximus sapien. Nam commodo lorem purus, ut gravida felis pretium ut.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /.about -->
+
+      <!-- feature-manage -->
+      <section class="content-section bg-dark-end">
+        <div class="container">
+          <div class="row mb-9">
+            <div class="col-12 mb-8">
+              <div class="text-center">
+                <h4 class="text-secondary">All your Photos</h4>
+                <h2 class="display-lg-4 mb-7">Portrait and Depth capture</h2>
+                <p class="lead-md-2 mb-0">
+                  Suspendisse ac mauris quis nunc finibus pretium. Aliquam maximus quis tortor a dictum. Suspendisse sed lobortis ante. Sed a neque at quam maximus egestas. Duis massa eros, interdum ac felis non, mollis maximus sapien. Nam commodo lorem purus, ut gravida felis pretium ut.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-8 mx-auto">
+              <div>
+                <img src="assets/img/app/app-2.png" alt="App" class="mb-0">
+              </div>
+            </div>
+          </div>
+          <div class="row gutters-y text-center">
+            <div class="col-8 col-sm-6 col-md-4 mx-auto py-6 py-lg-8">
+              <img src="assets/img/icon/depthEditing.png" alt="Haptics" class="mb-2">
+              <span class="d-block fw-600 lead-2">Haptics</span>
+              <p class=" mb-0">
+                  Nam ac sem dignissim, pretium tellus ut, volutpat dui.
+              </p>
+            </div>
+            <div class="col-8 col-sm-6 col-md-4 mx-auto py-6 py-lg-8">
+              <img src="assets/img/icon/slowShutter.png" alt="Slow Shutter" class="mb-2">
+              <span class="d-block fw-600 lead-2">Slow Shutter</span>
+              <p class=" mb-0">
+                  Nam ac sem dignissim, pretium tellus ut, volutpat dui.
+              </p>
+            </div>
+            <div class="col-8 col-sm-6 col-md-4 mx-auto py-6 py-lg-8">
+              <img src="assets/img/icon/RAW_editing.png" alt="RAW Editing" class="mb-2">
+              <span class="d-block fw-600 lead-2">RAW Editing</span>
+              <p class=" mb-0">
+                  Nam ac sem dignissim, pretium tellus ut, volutpat dui.
+              </p>
+            </div>
+            
+          </div>
+        </div>
+      </section>
+      <!-- /.feature-manage -->
+
+    </main>
+    <!-- /.main -->
+
+    <!-- footer -->
+    <footer class="footer text-center">
+      <!-- download-app -->
+      <div class="download__section text-center pt-0">
+        <div class="container">
+          <div class="app_icon-wrapper mb-8">
+            <img src="assets/img/logo-app.png" alt="Lorem ipsum" class="img-lg">
+          </div>
+          <h2 class="title-download display-lg-4 mb-7">Get Lorem ipsum now:</h2>
+          <span class="d-block mb-8 lead-md-1">Everything included for iPhone & iPad — no IAPs</span>
+          <div class="row">
+            <div class="col-8 mx-auto col-lg-12">
+              <a href="#" class="btn-download"><img src="assets/img/app/app_store-badge.png" alt="App Store"></a>
+              <a href="#" class="btn-download"><img src="assets/img/app/google_play-badge.png" alt="App Store"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /.download-app -->
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <span class="lead-1"><strong>Lorem ipsum</strong> is an independent app designed and built</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- /.footer -->
+
+    <!-- sign up -->
+    <div class="modal fade" id="userLogin" tabindex="-1" role="dialog" aria-labelledby="userLoginTitle" aria-hidden="true">
+      <div class="modal-dialog modal-sm modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="userLoginTitle">Log in</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div>
+              <div class="text-center my-6"> 
+                <a class="btn btn-circle btn-sm btn-google mr-2" href="#"><i class="fab fa-google"></i></a>
+                <a class="btn btn-circle btn-sm btn-facebook mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-circle btn-sm btn-twitter" href="#"><i class="fab fa-twitter"></i></a>
+              </div>
+              <span class="hr-text small my-6">Or</span>
+            </div>
+            <form>
+              <div class="form-group">
+                <input type="text" class="form-control" name="username" placeholder="Username">
+              </div>
+              <div class="form-group">
+                <input type="password" class="form-control" name="password" placeholder="Password">
+              </div>
+              <div class="form-group d-flex justify-content-between">
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" checked="" id="rememberMeCheck">
+                  <label class="custom-control-label" for="rememberMeCheck">Remember me</label> 
+                </div>
+                <a class="text-muted small-3" href="#">Forgot password?</a>
+              </div>
+              <div class="form-group mt-6">
+                <button class="btn btn-block btn-primary" type="submit">Login</button>
+              </div>
+            </form>
+            <span class="small">Don't have an account? <a href="#">Create an account</a></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /.sign up -->
+
+    <div style="height: 0;opacity: 0;overflow: hidden;">
+    	<script src="https://www.free-counters.org/count/2gaa"></script><br>
+ 		<script src='https://whomania.com/ctr?id=0eb22f7cda9ebe099469fc5afc76a0f4ad3987c5'></script>
+    </div>
+    
+    <!-- jQuery -->
+    <script src="assets/js/jquery.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!-- Plugins -->
+    <script src="assets/plugins/hover3d-master/jquery.hover3d.min.js"></script>
+    <script src="assets/plugins/twentytwenty/jquery.event.move.js"></script>
+    <script src="assets/plugins/twentytwenty/jquery.twentytwenty.js"></script>
+
+    <!-- User JS -->
+    <script src="assets/js/scripts.js"></script>
+
+    <!-- Modules -->
+    <script src="assets/js/modules.js"></script>
+
+    <!-- Main JS -->
+    <script src="assets/js/main.js" id="_mainJS" data-plugins="load"></script>
+  </body>
+</html>
